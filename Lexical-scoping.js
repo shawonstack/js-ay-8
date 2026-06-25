@@ -6,7 +6,7 @@ function first() {
   }
   second();
 }
-// first();
+first();
 const appName = 'netflix';
 function login() {
   const user = 'rahim';
@@ -14,7 +14,7 @@ function login() {
   console.log(user);
 }
 
-// login();
+login();
 // ---------- react comonent reeted
 const theme = 'dark';
 function dashoard() {
@@ -25,7 +25,7 @@ function dashoard() {
   }
   second();
 }
-// dashoard();
+dashoard();
 // -------lexical scope vs function call
 let p = 10;
 
@@ -41,6 +41,61 @@ function one() {
   }
 
   two();
+}
+
+one();
+// ---------------5 task solve
+let a2 = 5;
+
+function test() {
+  console.log(a2);
+}
+
+test();
+// ----------
+let a3 = 10;
+
+function first() {
+  let b = 20;
+
+  function second() {
+    console.log(a3);
+    console.log(b);
+  }
+
+  second();
+}
+
+first();
+// ------------
+function parent() {
+  let money = 500;
+
+  function child() {
+    console.log(money);
+  }
+
+  child();
+}
+
+parent();
+// -------------
+// function parent() {
+//   let money = 500;
+// }
+
+// console.log(money);
+// -------------
+const name = 'Global';
+
+function one() {
+  const name = 'One';
+
+  two();
+}
+
+function two() {
+  console.log(name);
 }
 
 one();
