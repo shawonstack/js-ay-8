@@ -11,7 +11,7 @@ function outer() {
 }
 // const result = outer();
 // result();
-const country = 'Bangladesh';
+// const country = 'Bangladesh';
 
 function outer() {
   const city = 'Dhaka';
@@ -29,3 +29,21 @@ function outer() {
 
 // outer();
 // ---------------------------
+function test() {
+  const age = 25;
+  console.log(age);
+}
+test();
+// -----------
+const apiUrl = 'https://api.com';
+
+function fetchUser() {
+  function getData() {
+    console.log(apiUrl);
+  }
+
+  getData();
+}
+
+fetchUser();
+// scope cain vs lexical scope
