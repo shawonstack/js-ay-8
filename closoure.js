@@ -26,3 +26,20 @@ function father() {
 }
 let result = father();
 result();
+// ---------discount releted issue
+function creatDiscount(discount) {
+  return function (price) {
+    return price - price * discount;
+  };
+}
+// const createDiscount = discount => price => price - price * discount;
+console.log(creatDiscount(0.2)(1000));
+// ---------event handeler
+const button = document.querySelector('button');
+
+let count = 0;
+
+button.addEventListener('click', function () {
+  count++;
+  console.log(count);
+});
