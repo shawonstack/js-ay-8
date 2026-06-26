@@ -43,3 +43,22 @@ button.addEventListener('click', function () {
   count++;
   console.log(count);
 });
+// ---------memziedsquire
+function memoizedSquare() {
+  let cache = {};
+
+  return function (num) {
+    if (cache[num]) {
+      console.log('From Cache');
+      return cache[num];
+    }
+
+    console.log('Calculated');
+
+    let result = num * num;
+
+    cache[num] = result;
+
+    return result;
+  };
+}
