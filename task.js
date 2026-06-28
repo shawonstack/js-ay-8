@@ -105,3 +105,33 @@ outer();
 // Inner Scope
 
 // innerVar
+// ------------------------------------task 7
+function memoizedSquare() {
+  let cache = {};
+
+  return function (number) {
+    if (cache[number]) {
+      console.log('From Cache');
+
+      return cache[number];
+    }
+
+    console.log('Calculating...');
+
+    let result = number * number;
+
+    cache[number] = result;
+
+    return result;
+  };
+}
+
+const square = memoizedSquare();
+
+console.log(square(5));
+
+console.log(square(5));
+
+console.log(square(10));
+
+console.log(square(10));
