@@ -20,3 +20,14 @@ function createUser(name) {
 const user1 = createUser('Shawon');
 const user2 = createUser('Nayeem');
 console.log(user1.sayHello());
+function multiplir(num) {
+  return {
+    double(x) {
+      console.log(x * x);
+      return;
+    },
+    triple(y) {
+      console.log(x ** 3);
+    },
+  };
+}
