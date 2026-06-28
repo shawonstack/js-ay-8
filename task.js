@@ -34,3 +34,4 @@ function creatUser(name) {
 const user = creatUser('shawon');
 console.log(user.getName());
 console.log(user.getPass('3456'));
+// task -----------3
