@@ -20,6 +20,7 @@ function passwordLonger() {
   let password = 0;
   return function () {
     password++;
+    password--;
     return password;
   };
 }
