@@ -135,3 +135,15 @@ console.log(square(5));
 console.log(square(10));
 
 console.log(square(10));
+// 0utput
+Calculating...
+25
+
+From Cache
+25
+
+Calculating...
+100
+
+From Cache
+100
